@@ -14,7 +14,7 @@ def put(sig,t,g):
     if j<0: sig=sig[-j:]; j=0
     L=min(len(sig),n-j)
     if L>0: out[j:j+L]+=sig[:L]*g
-for i,ws,s in b.PLACED:
+for i,ws,s in ([] if os.environ.get('NOTAPS') else b.PLACED):
     for wd in ws:
         kk=int(min(4,max(1,np.ceil(wd.chars/4))))
         for m in range(kk): put(hits[rng.integers(len(hits))], wd.t+m*0.06+rng.uniform(-0.008,0.008), rng.uniform(0.20,0.26))
