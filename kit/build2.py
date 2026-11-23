@@ -93,7 +93,7 @@ STEP_START = {}
 PLACED = []   # (line_index, words, step)
 for step in range(1, 8):
     idx = [i for i, l in enumerate(LINES) if l[1] == step]
-    y = Y0
+    y = globals().get('Y0_STEP', {}).get(step, Y0)
     for i in idx:
         ws, y2 = layout_line(LINES[i], y)
         PLACED.append((i, ws, step))
