@@ -1,0 +1,146 @@
+{
+ "dm": {
+  "kitdir": "/tmp/ssp/kit/reels/dm",
+  "nh": 3,
+  "old_wav": "/tmp/w/dm/old.wav",
+  "old_mp4": "/tmp/ssp/2026-11-25_decision-maker-reel/reel.mp4",
+  "new_wav": "/tmp/w/today.wav",
+  "chunks": [
+   [
+    3.16,
+    3.97
+   ],
+   [
+    4.2,
+    4.87
+   ],
+   [
+    5.15,
+    6.54
+   ]
+  ],
+  "groups": [
+   [
+    0
+   ],
+   [
+    1
+   ],
+   [
+    2
+   ]
+  ],
+  "cfg_sub": [
+   [
+    "slam_text='ORDER: 0'",
+    "slam_text='COMPETITOR WON', size_s=112"
+   ]
+  ]
+ },
+ "amc": {
+  "kitdir": "/tmp/ssp/kit/reels/amc",
+  "nh": 2,
+  "old_wav": "/tmp/w/old_2026-11-26_free-amc-reel.wav",
+  "old_mp4": "/tmp/ssp/2026-11-26_free-amc-reel/reel.mp4",
+  "new_wav": "/tmp/w/free_maintenance.wav",
+  "chunks": [
+   [
+    1.04,
+    1.8
+   ],
+   [
+    2.0,
+    2.56
+   ],
+   [
+    2.86,
+    4.43
+   ]
+  ],
+  "groups": [
+   [
+    0,
+    1
+   ],
+   [
+    2
+   ]
+  ],
+  "cfg_sub": [
+   [
+    "SLAM = T[1][0] + 0.75",
+    "SLAM = T[1][0] + 0.75\nB0 = T[0][0] + 0.75"
+   ],
+   [
+    "TICKS = (T[1][0], SLAM - 0.08)",
+    "TICKS = (B0 + 0.1, SLAM - 0.08)"
+   ],
+   [
+    "b_label='ശരിക്കുള്ള ചിലവ്', b_from=0, b_to=9600",
+    "b_label='PROFIT', b_from=22500, b_to=12900"
+   ],
+   [
+    "b_start=T[1][0] - 0.2",
+    "b_start=B0"
+   ]
+  ]
+ },
+ "fu": {
+  "kitdir": "/tmp/ssp/kit/reels/fu",
+  "nh": 3,
+  "old_wav": "/tmp/w/old_2026-11-27_follow-up-reel.wav",
+  "old_mp4": "/tmp/ssp/2026-11-27_follow-up-reel/reel.mp4",
+  "new_wav": "/tmp/w/80000_order.wav",
+  "chunks": [
+   [
+    2.23,
+    3.39
+   ],
+   [
+    3.66,
+    4.51
+   ],
+   [
+    4.67,
+    5.43
+   ]
+  ],
+  "groups": [
+   [
+    0
+   ],
+   [
+    1
+   ],
+   [
+    2
+   ]
+  ],
+  "cfg_sub": [
+   [
+    "size_a=112, ",
+    ""
+   ],
+   [
+    "pill=None, a_text='QUOTATION SENT'",
+    "pill='ഒരു ഉദാഹരണം', a_text='SAR 80,000 ORDER', size_a=98"
+   ],
+   [
+    "b_label='PRICE', b_static='ശരിയായിരുന്നു'",
+    "b_label='COMPETITOR-ന്റെ PRICE', b_static='കൂടുതൽ'"
+   ],
+   [
+    "b_col1='G'",
+    "b_col1='Y'"
+   ],
+   [
+    "b_col1='Y'",
+    "b_col1='Y', label_size=80, label_col='R', label_y=860, b_y=1000"
+   ],
+   [
+    "exec(open('common/hook.py').read())",
+    "exec(open('/tmp/w/fu/hook_fu.py').read())"
+   ]
+  ]
+ }
+}
