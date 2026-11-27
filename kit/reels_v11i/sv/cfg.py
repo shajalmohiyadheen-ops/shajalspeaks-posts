@@ -5,10 +5,10 @@ BODY_END = T[-1][1] + 0.6
 SLAM = T[2][0] + 0.05
 _BS = T[1][0] - 0.15
 TICKS = (_BS + 0.1, SLAM - 0.1)
-HOOK = dict(pill='ഒരു ഉദാഹരണം', a_text='BEFORE ORDER: 20 CALLS', size_a=86, a_col='G',
+HOOK = dict(pill='ഒരു ഉദാഹരണം', a_text='BEFORE ORDER: 20 CALLS', size_a=74, a_col='G',
             b_label='AFTER ORDER, CUSTOMER CALLED', b_from=0, b_to=20, b_fmt=lambda v: f'{int(round(v))} TIMES', b_start=_BS,
             b_col0='W', b_col1='R', label_size=52, label_col='R', label_y=840,
-            slam_text='AMC LOST: SAR 1.35 LAKH', size_s=80)
+            slam_text='AMC LOST: SAR 1.35 LAKH', size_s=74)
 LINES = [
  (T[3], 1, [('pill', [('Y', 'ഒരു ഉദാഹരണം')]), ('big', [('W', 'ഖോബാറിലെ ഒരു hotel.')])]),
  (T[4], 1, [('big', [('W', 'Access control. AMC വർഷം '), ('Y', '45,000 റിയാൽ.')])]),

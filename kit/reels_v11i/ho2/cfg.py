@@ -8,7 +8,7 @@ TICKS = (_BS + 0.1, SLAM - 0.1)
 HOOK = dict(pill='ഒരു ഉദാഹരണം', a_text='ANOOP: ON LEAVE', size_a=104, a_col='Y',
             b_label='MISSED CALLS', b_from=0, b_to=14, b_fmt=lambda v: str(int(round(v))), b_start=_BS,
             b_col0='W', b_col1='R', label_size=64, label_col='R', label_y=840,
-            slam_text='ORDER: COMPETITOR', size_s=100)
+            slam_text='ORDER: COMPETITOR', size_s=88)
 LINES = [
  (T[4], 1, [('pill', [('Y', 'ഒരു ഉദാഹരണം')]), ('big', [('W', 'റിയാദിലെ ഒരു logistics company.')])]),
  (T[5], 1, [('big', [('W', 'Access control: '), ('Y', '2.4 ലക്ഷം റിയാൽ.')])]),
